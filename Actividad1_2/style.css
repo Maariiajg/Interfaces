@@ -1,0 +1,171 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Petit+Formal+Script&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #efe7dd;
+  color: #764b36;
+  line-height: 1.6;
+}
+
+/* ====== HEADER ====== */
+header {
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+  gap: 20px;                 
+  padding: 20px;
+}
+
+header img {
+  max-width: 100px;
+}
+
+header h1 {
+  font-family: 'Petit Formal Script';
+  font-size: 2.5rem;
+  color: #764b36;
+}
+
+/* ====== NAV ====== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px;
+  background-color: #d8a790;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #764b36;
+  transition: color 0.3s ease;
+}
+
+/* ====== BANNER HORIZONTAL ====== */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.banner-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-images img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #764b36;
+  font-size: 1.8rem;
+  font-family: 'Petit Formal Script';
+}
+
+/* ====== TARJETAS ====== */
+.tarjetas-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: white;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+}
+
+.tarjeta h3 {
+  font-family: 'Petit Formal Script';
+  font-size: 1.5rem;
+  margin: 15px;
+  color: #764b36;
+}
+
+.tarjeta p {
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+.tarjeta button {
+  background-color: #d8a790;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+
+/* ====== FOOTER ====== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d8a790;
+  padding: 30px;
+  color: #764b36;
+  
+}
+
+footer img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+footer div {
+  min-width: 200px;
+  margin-bottom: 20px;
+  
+}
+
+footer a {
+  color: #764b36;
+  text-decoration: underline;
+}
+footer .contacto img{
+    height: auto;
+    width: 20px;
+    object-fit: cover;
+     
+}
+
+/* ====== BOTTOM BAR ====== */
+.bottom-bar {
+  text-align: center;
+  padding: 10px;
+  background: #764b36;
+  color: #efe7dd;
+}
+
+.bottom-bar a {
+  color: #efe7dd;
+  margin: 8px;
+  text-decoration: none;
+}
+
