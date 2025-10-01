@@ -2,7 +2,21 @@ body{
 
 }
 
-.cabecera{
+.fila{
     float: left;
-    
+    display: block;
+    width: 100%;
+}
+
+.menu{
+    float: left;
+    width: 20%;
+}
+.logo, img{
+    float: left;
+    width: 60%;
+}
+.RRSS{
+    float: left;
+    width: 20%;
 }
