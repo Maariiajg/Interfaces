@@ -1,7 +1,7 @@
-/* ===== Fuentes ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-/* ===== Estilos base ===== */
+
 body {
   font-family: 'Lato';
   background-color: #F5F5F0;
@@ -10,32 +10,32 @@ body {
   padding: 0;
 }
 
-/* ===== Tipografía ===== */
+
 h2, h4 {
   font-family: 'Playfair Display';
   color: #1A4D3C;
 }
 
-/* ===== Cabecera ===== */
+
 
 .menu i, .RRSS i {
   color: #1A4D3C;
 }
 
 
-/* ===== Logo ===== */
+
 header img {
   max-width: 120px;
 }
 
-/* ===== Imágenes horizontales ===== */
+
 .banner-img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
-/* ===== Sección de productos ===== */
+
 .imagen-texto img {
   height: 400px;
 }
@@ -45,7 +45,7 @@ header img {
   margin-bottom: 10px;
 }
 
-/* ===== Texto descriptivo ===== */
+
 section p {
   text-align: justify;
   max-width: 800px;
@@ -53,7 +53,7 @@ section p {
   font-size: 15px;
 }
 
-/* ===== Footer ===== */
+
 footer {
   background-color: #A5B2A1;
   padding: 40px;
@@ -74,7 +74,7 @@ footer a {
 }
 
 
-/* ===== Firma final ===== */
+
 .firma {
   background-color: #A5B2A1;
   text-align: center;
@@ -85,7 +85,7 @@ footer a {
   color: #2C2C2C;
 }
 
-/* ===== Ajustes responsive ===== */
+/*Ajustes responsive*/
 @media (max-width: 768px) {
   .banner-img,
   .imagen-texto img {
