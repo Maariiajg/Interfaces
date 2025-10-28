@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 2 - Accesibilidad</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+  <header class="container-fluid py-3">
+    <div class="row align-items-center text-center">
+      <div class="col-3 d-flex justify-content-center align-items-center gap-3">
+        <i class="fa-solid fa-bars fs-3 menu"></i>
+
+        <!-- Icono de accesibilidad -->
+        <i id="iconoAccesibilidad" class="fa-solid fa-universal-access fs-3"></i>
+      </div>
+      <div class="col-6">
+        <img src="imagenes/ChatGPT Image 17 sept 2025, 18_07_33.png" alt="logo" class="img-fluid logo">
+      </div>
+      <div class="col-3 RRSS">
+        <i class="fa-brands fa-instagram fs-4 mx-2"></i>
+        <i class="fa-brands fa-facebook fs-4 mx-2"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- PANEL DE ACCESIBILIDAD -->
+  <div id="panelAccesibilidad" class="accesibilidad-panel oculto">
+    <button id="modoOscuro" title="Modo oscuro"><i class="fa-solid fa-moon"></i> Oscuro</button>
+    <button id="modoMonocromo" title="Modo monocromo"><i class="fa-solid fa-adjust"></i> Monocromo</button>
+    <button id="modoContraste" title="Alto contraste"><i class="fa-solid fa-circle-half-stroke"></i> Contraste</button>
+    <button id="destacarEnlaces" title="Destacar enlaces"><i class="fa-solid fa-link"></i> Enlaces</button>
+    <button id="reiniciar" title="Reiniciar estilos"><i class="fa-solid fa-rotate-left"></i> Reiniciar</button>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <section class="container my-4">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="imagenes/cabecera_1.jpg" alt="cabecera_1" class="img-fluid banner-img">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/cabecera_2.jpg" alt="cabecera_2" class="img-fluid banner-img">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/cabecera_3.jpg" alt="cabecera_3" class="img-fluid banner-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PRODUCTOS -->
+  <section class="container my-5">
+    <div class="row text-center g-4">
+      <div class="col-md-6 imagen-texto">
+        <h2>Anillo esmeralda</h2>
+        <img src="imagenes/img1.1.1.jpg" class="img-fluid" alt="Anillo esmeralda">
+      </div>
+      <div class="col-md-6 imagen-texto">
+        <h2>Collar doble</h2>
+        <img src="imagenes/img1.1.3.jpg" class="img-fluid" alt="Collar doble">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEXTO -->
+  <section class="container my-5">
+    <p>
+      La idea de Poisonous Snake nació en un viaje a Cartagena de Indias, cuando su fundadora, Elena Ramírez, descubrió en un mercado local una antigua pieza de joyería precolombina en forma de serpiente. Esa figura, que en muchas culturas simboliza renovación, poder y protección, se convirtió en el punto de partida para crear una marca de joyería que uniera tradición, elegancia y carácter contemporáneo.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-6 col-md-3 mb-4 footer-column">
+          <h4>Nueva colección</h4>
+          <a href="#">Pulseras</a>
+          <a href="#">Collares</a>
+          <a href="#">Anillos</a>
+        </div>
+        <div class="col-6 col-md-3 mb-4 footer-column">
+          <h4>Próximos lanzamientos</h4>
+          <a href="#">Pulseras</a>
+          <a href="#">Collares</a>
+          <a href="#">Anillos</a>
+        </div>
+        <div class="col-6 col-md-3 mb-4 footer-column">
+          <h4>Lo más vendido</h4>
+          <a href="#">Pulseras</a>
+          <a href="#">Collares</a>
+          <a href="#">Anillos</a>
+        </div>
+        <div class="col-6 col-md-3 mb-4 footer-column">
+          <h4>Nuestros favoritos</h4>
+          <a href="#">Pulseras</a>
+          <a href="#">Collares</a>
+          <a href="#">Anillos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="firma text-center py-3">
+    <p>Poisonous Snake | María Jiménez González</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Lato';
+  background-color: #F5F5F0;
+  color: #2C2C2C;
+  margin: 0;
+  padding: 0;
+}
+
+
+h2, h4 {
+  font-family: 'Playfair Display';
+  color: #1A4D3C;
+}
+
+
+
+.menu i, .RRSS i {
+  color: #1A4D3C;
+}
+
+
+
+header img {
+  max-width: 120px;
+}
+
+
+.banner-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.imagen-texto img {
+  height: 400px;
+}
+
+.imagen-texto h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+section p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0;
+  font-size: 15px;
+}
+
+
+footer {
+  background-color: #A5B2A1;
+  padding: 40px;
+}
+
+footer h4 {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #1A4D3C;
+}
+
+footer a {
+  display: block;
+  color: #2C2C2C;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+
+
+.firma {
+  background-color: #A5B2A1;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 15px;
+  margin: 0;
+  color: #2C2C2C;
+}
+
+/*Ajustes responsive*/
+@media (max-width: 768px) {
+  .banner-img,
+  .imagen-texto img {
+    height: 250px;
+  }
+
+  section p {
+    margin: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+
+
+
+/* PANEL DE ACCESIBILIDAD */
+.accesibilidad-panel {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.4s ease;
+}
+
+.accesibilidad-panel.oculto {
+  opacity: 0;
+  transform: translateX(+10px);
+  pointer-events: none;
+}
+
+.accesibilidad-panel button {
+  background-color: #1A4D3C;
+  color: white;
+  border: none;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.accesibilidad-panel button:hover {
+  background-color: #26765b;
+}
+
+#iconoAccesibilidad {
+  cursor: pointer;
+  color: #1A4D3C;
+}
+#iconoAccesibilidad:hover {
+  color: #26765b;
+}
+
+/* Modo oscuro */
+body.modo-oscuro {
+  background-color: #121212;
+  color: white;
+}
+
+/* Modo monocromo */
+body.modo-monocromo {
+  filter: grayscale(100%);
+}
+
+/* Alto contraste */
+body.modo-contraste {
+  filter: contrast(160%) saturate(140%);
+}
+
+/* Destacar enlaces */
+body.destacar-enlaces a {
+  background-color: yellow;
+  color: black !important;
+  font-weight: bold;
+}

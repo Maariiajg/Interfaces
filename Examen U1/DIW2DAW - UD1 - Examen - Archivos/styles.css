@@ -29,6 +29,7 @@ h1, h2, h3{
     width: 40%;
     background-color: #91adaeff;
     padding: 2px;
+    position: relative;
    
 }
 
@@ -59,6 +60,7 @@ h1, h2, h3{
 .icons{
     text-align: right;
     width: 98%;
+    align-items: center;
 }
 
 .main-section {
