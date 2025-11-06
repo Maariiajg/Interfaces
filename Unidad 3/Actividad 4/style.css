@@ -1,0 +1,23 @@
+h2 {
+  color: blue;
+}
+
+body > h2:first-of-type {
+  color: red;
+}
+
+#secundario article:last-child h2 {
+  color: purple;
+}
+
+#principal{
+    text-decoration: underline;
+}
+
+#principal h2{
+    color: aquamarine;
+}
+
+.article{
+    border-width: 1px ;
+}

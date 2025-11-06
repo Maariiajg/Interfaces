@@ -1,0 +1,24 @@
+table thead tr{
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+table td:last-child{
+    font-weight: bold;
+    text-align: center;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: aquamarine;
+}
+table tbody tr:nth-child(even){
+    background-color: beige;
+}
+
+table tfoot tr{
+    background-color: purple;
+    text-transform: uppercase;
+    color: white;
+}
+
