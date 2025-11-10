@@ -2,7 +2,7 @@ h2 {
   color: blue;
 }
 
-body > h2:first-of-type {
+body > h2:first-child {
   color: red;
 }
 
