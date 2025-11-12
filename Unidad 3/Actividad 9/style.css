@@ -1,0 +1,56 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-template-areas: 
+        "a a a"
+        "b c d"
+        "e e e";
+    color: white;
+}
+
+header{
+    grid-area: a;
+    background-color: #3498db;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra_lateral{
+    grid-area: b;
+    background-color: #2ecc71;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-principal{
+    grid-area: c;
+    background-color: #ecf0f1;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget-derecho{
+    grid-area: d;
+    background-color: #9b59b6;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    grid-area: e;
+    background-color: #34495e;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

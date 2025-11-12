@@ -1,0 +1,24 @@
+.gallery{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card{
+    width: 25%;
+    padding: 20px;
+    background-color: antiquewhite;
+    margin: 2px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    display: flex; /*para contenido de tarjeta*/
+    flex-direction: column; /*contenido de la tarjeta alineado en columna*/
+    align-items: center;
+}
+.card img{
+    width: 100%;    
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}

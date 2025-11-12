@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    /*grid-template-rows: auto auto auto; no es necesario pero se puede poner*/
+    grid-template-columns: auto auto auto;
+    height: 400px;
+    width: 400px;
+    gap: 7px;
+}
+
+.grid-container .grid-item{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(109, 142, 250);
+    border: 1px solid black;
+    font-size: 30px;
+}
+
+.grid-container .grid-item:hover{
+    background-color: greenyellow;
+}
