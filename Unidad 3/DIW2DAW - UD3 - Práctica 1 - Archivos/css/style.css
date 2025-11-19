@@ -1,0 +1,130 @@
+/* resetea los estilos del navegador */
+*{margin: 0; padding: 0;}
+
+header #logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul{
+    background-color: #bbdb88; 
+}
+header nav ul li{
+    display: flex;
+    display: inline-block;  
+}
+header nav ul li a{
+     font-size: 12px;
+    font-family: Arial;
+    text-decoration: none;
+    color: white;
+}
+
+
+header nav ul li:hover{
+    background-color: black;
+    text-decoration: underline;
+}
+
+header nav ul li:nth-last-child(2) a{
+    color: red;
+}
+
+
+/*REDES*/
+#redes {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    gap: 10px;
+}
+
+
+/*Para borrar el texto y dejar solo los iconos*/
+#redes a span {
+    display: none;  
+}
+
+#redes a:nth-child(1)::after {
+    content: url("../img/facebook.png");
+    
+}
+#redes a:nth-child(2)::after {
+    content: url("../img/twitter.png");
+}
+
+#redes a:nth-child(3)::after {
+    content: url("../img/linkedin.png");
+}
+
+
+
+
+
+/*CUERPO*/
+#main .banner{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+    
+}
+
+#main h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.principal{
+    max-width: 800px;
+    color: #92968c;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 32px;
+    margin: 0 auto;  /*centra el contenido en la pagina*/
+    text-align: justify;
+}
+
+
+/*Productos*/
+.productos{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.productos ul{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+    list-style: none;
+}
+
+.productos ul li{
+    width: 33%;
+}
+
+.productos ul li img{
+    width: 100%;
+}
+.productos ul li h3{
+    text-align: center;
+    color:  #292a27;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Oswald';
+    line-height: 1px;
+}
+
+.productos ul li .desc {
+    color: black;
+    font-size: 15px;
+    font-family: Arial;
+    text-align: left;
+}
