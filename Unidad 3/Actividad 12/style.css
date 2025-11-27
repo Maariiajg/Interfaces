@@ -1,0 +1,16 @@
+
+body {
+    font-size: 20px;
+    padding-bottom: 50px; 
+}
+
+#pie-documento {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
