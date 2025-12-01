@@ -3,16 +3,16 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 25% auto;
-    grid-template-rows: 130px 260px 40px;
+    grid-template-columns: 260px auto;
+    grid-template-rows: 130px 750px 40px;
     grid-template-areas: 
-        "c c"
-        "m n"
-        "f f";
+        "cabecera cabecera"
+        "menu main"
+        "footer footer";
 }
 
 .cabecera{
-    grid-area: c;
+    grid-area: cabecera;
     background-color: goldenrod;
     display: flex;
     align-items: center;
@@ -24,13 +24,13 @@ body{
 }
 
 .menu{
-    grid-area: m;
+    grid-area: menu;
     background-color: #eee;
-    padding: 20px;
 }
 
 .menu li{
     margin-bottom: 10px;
+    list-style: none;
 }
 
 .menu li a{
@@ -38,6 +38,7 @@ body{
     text-decoration: underline;
     font-size: 20px;
     line-height: 1px;
+    color: black;
 }
 
 .menu .selected{
@@ -49,9 +50,9 @@ body{
 }
 
 .main{
-    grid-area: n;
-    display: flex;
-    justify-content: center;
+    grid-area: main;
+    margin-right: 260px;
+
 }
 .main h1{
     text-transform: uppercase;
@@ -59,11 +60,81 @@ body{
 }
 
 .filtro{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.filtro ul{
+    list-style: none;
+}
+
+.filtro ul li{
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.filtro ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: goldenrod;
+    padding: 4px;
+}
+
+.filtro ul li a:hover{
+    background-color: black;
+    color: goldenrod;
+}
+
+.filtro .selected{
+    background-color: black;
+    color: goldenrod;
+}
+
+.marcas{
     width: 750px;
+    margin-left: 260px;
     margin: 0 auto;
+     
+}
+
+.marcas ul{
+    list-style: none;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.marcas ul li{
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 16px;
+    padding: 6px;   
+}
+
+.marcas ul li:hover{
+    color: gold;
+    background-color: goldenrod;
+}
+
+.marcas .nostock{
+    color: #ddd;
+}
+.marcas .nostock:hover{
+    color: #ddd;
+    background-color: #eee;
+    cursor: not-allowed;
 }
 
 footer{
-    grid-area: f;
+    grid-area: footer;
     background-color: goldenrod;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
 }
