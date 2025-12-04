@@ -4,7 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 260px auto;
-    grid-template-rows: 130px 750px 40px;
+    grid-template-rows: 130px auto 40px;
     grid-template-areas: 
         "cabecera cabecera"
         "menu main"
