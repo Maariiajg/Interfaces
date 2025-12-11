@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.row > div {
+    width: 50%;
+}
+
+/* Bloque de texto */
+.htmlblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 192, 45);
+    text-align: center;
+}
+.innerblock{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+}
+/* Primer título */
+.innerblock div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+}
+
+/* Título grande */
+
+.innerblock .title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: none;
+    margin: 10px 0;
+}
+
+/* botton */
+.innerblock a {
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Hover del enlace */
+.innerblock a:hover {
+    background-color: black;
+    color: rgb(250, 192, 45);
+}
+
+/* Imágenes */
+.row img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/*===RESPONSIVE ACTIVIDAD 14==*/
+@media (max-width: 768px){ 
+    .row{
+        flex-direction: column;
+    }
+    .row > div{
+        width: 100%;
+    }
+    .container .row:first-child .htmlblock{
+        order: 2;
+        height: 100vw; /* indicamos que la altura sea la misma que el 100 % de la ventana */
+        /* otra solución: */
+        /* aspect-ratio: 1/1; */
+    }
+    .container .row:first-child div:last-child{
+        order: 1;
+    }
+    .container .row:last-child .htmlblock{
+        height: 100vw;
+        /* otra solución: */
+        /* aspect-ratio: 1/1; */
+    }
+}
+
