@@ -1,0 +1,162 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    max-width: 980px;
+    justify-content: space-between;
+    background-color: darkgray;
+    border-radius: 12px;
+    padding: 18px;
+
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    color: white;
+}
+
+header nav ul li a span{
+    font-size: 25px;
+    margin-left: 2px;
+}
+
+
+
+.main{
+    max-width: 900px;
+    background-color: darkgray;
+    padding: 40px;
+    border-radius: 12px;
+    
+}
+
+.cartas{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.carta{
+    width: 33%;
+    background-color: #a7820b;
+    padding: 10px;
+    border: 12px solid black;
+    border-radius: 12px;
+}
+
+.carta span{
+    color: silver;
+}
+
+.carta:first-child{
+    background-color: #207eca;
+}
+.carta:last-child{
+    background-color: #242b23;
+}
+
+.carta .info{
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.carta .coste_mana{
+    text-align: right;  /*no vaaaaaa*/
+    background-color: silver;
+    color: black;
+    border-radius: 16px;
+    padding-top: 1px 7px 1px 7px;
+}
+
+.carta .img img{
+    width: 100%;
+    outline: 2px solid darkgray;
+}
+
+.carta .caracteristicas{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.carta .descripcion:first-child{
+    background-color: #b9d6f9;
+}
+.carta .descripcion:last-child{
+    background-color: #b9b9b9;
+}
+.carta .descripcion{
+    background-color: #e0dac2;
+    color: black;
+    font-style: italic;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+    min-width: 110px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: center;
+    border: 2px solid darkgray;
+}
+
+.logo{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 440px;
+}
+
+
+/*RESPONSIVE*/
+
+@media(max-width: 768px){
+    .main {
+        padding: 40px 0px 40px 0px;
+    }
+    
+    .cartas{
+        flex-direction: column;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .carta{
+        width: auto;
+    }
+
+    .info span{
+        font-size: 20px;
+    }
+    .caracteristicas{
+        font-size: 16px;
+    }
+    .logo{
+        max-width: 300px;
+    }
+}

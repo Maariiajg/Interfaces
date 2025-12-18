@@ -1,0 +1,100 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-template-areas: 
+        "left-column header right-column"
+        "left-column main right-column"
+        "left-column footer right-column";
+    
+    grid-template-columns: 60px auto 60px;
+    grid-template-rows: 100px auto 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    color: #2e3532;
+}
+
+.left-column{
+    grid-area: left-column;
+    background-color: #2e3532;
+}
+
+.right-column{
+    grid-area: right-column;
+    background-color: #2e3532;
+}
+
+header{
+    grid-area: header;
+}
+
+header h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color:  #8b2635;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+    
+    padding: 20px;
+    background-color: palegoldenrod;
+    border-radius: 8px;
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plato{
+    border: 4px solid #8b2635;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+.plato img{
+    width: 100%;
+}
+.plato-info{
+    padding: 15px;
+}
+
+.plato-info .nombre{
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+.plato-info .precio{
+    font-size: 1.2em;
+    color: #8b2635;
+    font-weight: bold;
+}
+
+.plato-info .ingredientes{
+    font-size: 0.9em;
+}
+
+footer{
+    grid-area: footer;
+    background-color:  #2e3532;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+
