@@ -1,8 +1,92 @@
-body{
-    margin: 0px;
-    padding: 0px;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-header{
-    
+
+header, footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+
+header h1, footer p {
+    margin: 0;
+}
+
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #fff;
+}
+
+
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.perfil-info {
+    max-width: 500px;
+}
+
+
+.perfil-info h2 {
+    margin-top: 0;
+}
+
+
+.galeria {
+    padding: 2em;
+    background-color: #fff;
+}
+
+
+.galeria h2 {
+    text-align: center;
+}
+
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.foto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .perfil-img {
+        margin: 0 auto 20px auto;
+    }
+
+
+    .fotos {
+        grid-template-columns: 1fr;
+    }
 }
