@@ -1,0 +1,317 @@
+/* =========================================
+   VARIABLES DE ESTILO (Guía de Estilos)
+========================================= */
+:root {
+    --color-principal: #52796F;
+    --color-secundario: #F9F8F6;
+    --color-texto: #333333;
+    --color-blanco: #FFFFFF;
+    
+    --fuente-titulos: 'Quicksand', sans-serif;
+    --fuente-textos: 'Open Sans', sans-serif;
+}
+
+/* =========================================
+   RESET BÁSICO
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    color: var(--color-texto);
+    background-color: var(--color-blanco); /* Fondo general */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================================
+   CABECERA (HEADER)
+========================================= */
+header {
+    display: flex;
+    justify-content: space-between; /* Separa los 3 bloques principales */
+    align-items: center; /* Los centra verticalmente */
+    padding: 15px 5%; /* Espaciado interior */
+    background-color: var(--color-secundario);
+    border-bottom: 2px solid var(--color-principal); /* Una línea sutil para separar */
+}
+
+/* Estilos del Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.logo img {
+    height: 50px; /* Tamaño del logo */
+    width: auto;
+}
+
+/* Estilos del Menú */
+
+/* Ocultamos el icono hamburguesa en la vista de PC */
+.menu-hamburguesa {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    cursor: pointer;
+}
+
+nav .menu {
+    display: flex;
+    gap: 25px; /* Espacio entre los enlaces */
+}
+
+nav .menu a {
+    color: var(--color-texto);
+    font-weight: 600;
+}
+
+nav .menu a:hover {
+    color: var(--color-principal); /* Cambia al verde al pasar el ratón */
+}
+
+/* Iconos de la derecha */
+.iconos-usuario {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+
+.iconos-usuario a {
+    color: var(--color-principal);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* =========================================
+   CUERPO DEL PRODUCTO (CSS Grid)
+========================================= */
+.contenedor-producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas exactamente iguales */
+    gap: 40px; /* Separación entre la columna izquierda y derecha */
+    padding: 40px 5%; /* Espaciado interior */
+    max-width: 1200px; /* Evita que se estire demasiado en pantallas gigantes */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+
+/* --- BLOQUE DE IMÁGENES (Izquierda) --- */
+.bloque-imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre la imagen grande y las miniaturas */
+}
+
+.imagen-principal {
+    width: 100%;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    object-fit: cover;
+}
+
+.miniaturas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.miniaturas img {
+    width: 32%; /* Como son 3 miniaturas, ocupan un tercio del espacio cada una */
+    border-radius: 6px;
+}
+
+/* --- BLOQUE DE INFORMACIÓN (Derecha) --- */
+.bloque-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido arriba */
+}
+
+.bloque-informacion h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.descripcion-corta {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.precio {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-principal); /* El precio en el verde de la marca */
+    margin-bottom: 30px;
+}
+
+/* Formulario de compra (Cantidad y Botón) */
+.formulario-compra {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Separación entre el selector de cantidad y el botón */
+}
+
+.formulario-compra label {
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.formulario-compra input {
+    width: 70px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--fuente-textos);
+}
+
+.btn-comprar {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Separa el icono del texto dentro del botón */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* --- BLOQUE DE INFORMACIÓN AMPLIADA (Abajo, ocupando todo el ancho) --- */
+.bloque-ampliado {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd; /* Línea separadora sutil */
+}
+
+.bloque-ampliado h2 {
+    text-align: center; /* Centramos el título de esta sección */
+    margin-bottom: 20px;
+}
+
+.descripcion-larga {
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.contenedor-video {
+    max-width: 800px; /* Evitamos que el vídeo sea excesivamente gigante */
+    margin: 0 auto; /* Centramos el vídeo */
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA (FOOTER)
+========================================= */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas del mismo tamaño */
+    gap: 30px; /* Espacio entre las columnas */
+    padding: 50px 5%;
+    background-color: var(--color-secundario);
+    margin-top: 60px; /* Separa el footer del contenido principal */
+    border-top: 2px solid var(--color-principal);
+}
+
+.columna-footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--color-principal);
+}
+
+.columna-footer ul li {
+    margin-bottom: 12px;
+}
+
+.columna-footer ul li a, 
+.columna-footer {
+    color: var(--color-texto);
+    font-size: 0.95rem;
+}
+
+.columna-footer ul li a:hover {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+/* Redes Sociales */
+.redes-sociales a {
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* =========================================
+   VERSIÓN MÓVIL (RESPONSIVE)
+========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. CABECERA Y MENÚ */
+    nav .menu {
+        display: none; /* Ocultamos la lista de 5 enlaces */
+    }
+    
+    .menu-hamburguesa {
+        display: block; /* Mostramos el icono de la hamburguesa */
+    }
+    
+    header {
+        padding: 15px 3%; /* Reducimos un poco los márgenes laterales */
+    }
+
+
+    /* 2. CUERPO DEL PRODUCTO (Grid) */
+    .contenedor-producto {
+        /* Pasamos de 2 columnas a 1 sola columna. Todo se apila. */
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    /* La información ampliada (que antes ocupaba todo el ancho abajo), 
+       sigue funcionando perfecto en 1 columna, no hay que tocarle nada */
+
+    /* 3. PIE DE PÁGINA (Grid) */
+    footer {
+        /* Pasamos de 4 columnas a 1 columna apilada */
+        grid-template-columns: 1fr; 
+        gap: 30px;
+        text-align: center; /* Centramos el texto del footer en móvil para que quede mejor */
+    }
+}

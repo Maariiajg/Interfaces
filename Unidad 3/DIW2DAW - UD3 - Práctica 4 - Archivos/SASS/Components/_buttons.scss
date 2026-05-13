@@ -1,0 +1,33 @@
+.compra {
+    float: right;
+    background-color: $color-primario;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+    span {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: $fuente-titulos;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &::after {
+        content: "\f217";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: white;
+        padding-right: 8px;
+    }
+
+    &:hover {
+        color: black;
+        background-color: darken($color-primario, 20%); // Sass hace las matemáticas del color por ti
+    }
+}

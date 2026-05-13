@@ -1,0 +1,19 @@
+// Variables globales
+$color-primario: #bbdb88;
+$color-secundario: #92968c;
+$color-oscuro: #292a27;
+$fuente-titulos: 'Oswald', sans-serif;
+$fuente-textos: Arial, Helvetica, sans-serif;
+
+// Reseteo
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+// Imagenes fluidas por defecto
+img {
+    max-width: 100%;
+    display: block;
+}

@@ -1,0 +1,48 @@
+.productos {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        padding: 30px;
+        list-style: none;
+
+        li {
+            width: 33%;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                text-align: center;
+                color: $color-oscuro;
+                font-weight: bold;
+                font-size: 15px;
+                font-family: $fuente-titulos;
+                line-height: 1px;
+                padding: 15px;
+            }
+
+            .desc {
+                color: black;
+                font-size: 15px;
+                font-family: $fuente-textos;
+                text-align: left;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.price {
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-family: $fuente-textos;
+}

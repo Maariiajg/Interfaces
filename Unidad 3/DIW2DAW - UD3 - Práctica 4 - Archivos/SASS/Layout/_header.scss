@@ -1,0 +1,56 @@
+header {
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        float: left; // Nota: si quieres que la barra verde llegue al final, quita este float en el futuro
+
+        ul {
+            background-color: $color-primario; 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+
+            li {
+                display: inline-block; // Quitamos display: flex repetido
+                
+                a {
+                    font-size: 20px;
+                    font-family: $fuente-textos;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: black;
+                    text-decoration: underline;
+                }
+
+                &:nth-last-child(2) a {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 20px;
+        gap: 10px;
+
+        a {
+            span {
+                display: none;  
+            }
+
+            &:nth-child(1)::after { content: url("../img/facebook.png"); }
+            &:nth-child(2)::after { content: url("../img/twitter.png"); }
+            &:nth-child(3)::after { content: url("../img/linkedin.png"); }
+        }
+    }
+}

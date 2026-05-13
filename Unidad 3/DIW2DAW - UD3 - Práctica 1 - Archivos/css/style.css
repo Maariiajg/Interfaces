@@ -1,5 +1,5 @@
 /* resetea los estilos del navegador */
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
 header #logo{
     display: flex;
@@ -75,11 +75,17 @@ header nav ul li:nth-last-child(2) a{
 
 
 /*CUERPO*/
-#main .banner{
-    padding-top: 20px;
-    padding-bottom: 40px;
+#main .banner {
     width: 100%;
-    
+    padding: 0; /* Asegúrate de que no haya padding lateral */
+    margin: 0;
+    line-height: 0; /* Elimina espacios extra debajo de la imagen */
+}
+
+#main .banner img {
+    width: 100%;    /* Fuerza a la imagen a ocupar todo el ancho */
+    height: auto;   /* Mantiene la proporción */
+    display: block; /* Quita el espacio extra inferior de los elementos inline */
 }
 
 #main h1{
